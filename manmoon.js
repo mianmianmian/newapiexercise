@@ -23,7 +23,7 @@
 // Our variables
 //const key = "56cac8c2a2f74ff2afc47731f3937d50"
 //const url = `https://newsapi.org/v2/everything?q=blockkedja&apiKey=${key}`,
-const urlmoon = "https://api.open-notify.org/astros.json"
+const urlmoon = "http://api.open-notify.org/astros.json"
 
 // Our main function
 const recievedmoonNews = (moondata) => {
@@ -40,6 +40,10 @@ const recievedmoonNews = (moondata) => {
 }
 
 //Fetch is a built in function in Javascript, it gets the data from the API and tranforms it into Javascript objects – JSON data.
-fetch(urlmoon)
-  .then(response => response.json())
-  .then(recievedmoonNews)
+const fetchMoon = () => {
+  fetch(urlmoon)
+    .then(response => response.json())
+    .then(recievedmoonNews)
+}
+
+setTimeout(fetchMoon, 1000);
