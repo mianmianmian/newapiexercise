@@ -23,7 +23,7 @@
 // Our variables
 //const key = "56cac8c2a2f74ff2afc47731f3937d50"
 //const url = `https://newsapi.org/v2/everything?q=blockkedja&apiKey=${key}`,
-const urlmoon = "http://api.open-notify.org/astros.json"
+const urlmoon = "https://api.open-notify.org/astros.json"
 
 // Our main function
 const recievedmoonNews = (moondata) => {
