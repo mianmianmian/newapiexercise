@@ -1,0 +1,32 @@
+.news {
+	background-color:  pink;
+  font-size: 20px;
+  color: #0b5b0b;
+  width: 600px;
+  margin: 20px;
+  padding: 10px;
+  justify-content: center;
+}
+
+.news:hover img {
+  width:700px;
+  filter: opacity(100%);
+}
+
+img {
+	max-width: 600px;
+  filter: opacity(70%);
+  transition: filter 0.5s ease-in;
+}
+.allNews{
+  display: flex;
+  flex-wrap: wrap;
+}
+h1 {
+  text-align: center;
+  font-size: 40px;
+  }
+h2 {
+  text-align: left;
+  flex-wrap: wrap;
+  }
