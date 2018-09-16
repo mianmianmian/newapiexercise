@@ -46,4 +46,4 @@ const fetchMoon = () => {
     .then(recievedmoonNews)
 }
 
-setTimeout(fetchMoon, 1000);
+setTimeout(fetchMoon, 2000);
